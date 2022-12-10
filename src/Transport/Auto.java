@@ -3,15 +3,15 @@ package Transport;
 public class Auto {
 
     public Object startUp;
-    private String brand;
-    private String model;
-    private  int year;
-    private String country;
-    private static String noInfo = "Информация не указана";
+    protected String brand;
+    protected String model;
+    protected   int year;
+    protected String country;
+    protected static String noInfo = "Информация не указана";
 
 
     public Auto(String brand, String model, int year, String country) {
-
+        setBrand( brand);
         if (brand == null || brand.isEmpty()) this.brand = noInfo;
         else this.brand = brand;
 
@@ -59,7 +59,7 @@ public class Auto {
     }
     @Override
     public String toString(){
-        return brand + " модель " + model + "год " +year + " страна" + country;
+        return brand + " модель " + model + ", год " +year + ", страна" + country;
     }
     }
 

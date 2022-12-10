@@ -1,9 +1,20 @@
 package Transport;
 
 public class Car extends Auto  {
-
-    public Car(String brand, String model, int year, String country) {
+    private  String bodyType;
+    private String number;
+    private int seatCount;
+    public Car(String brand, String model, int year, String country, String bodyType, int seatCount) {
         super(brand, model, year, country);
+        this.bodyType = bodyType;
+        this.seatCount = seatCount;
+    }
+
+    public Car(String brand, String model, int year, String country, String bodyType, String number, int seatCount) {
+        super(brand, model, year, country);
+        this.bodyType = bodyType;
+        this.number = number;
+        this.seatCount = seatCount;
     }
 
     public String getBodyType() {
@@ -13,7 +24,6 @@ public class Car extends Auto  {
     public void setBodyType(String bodyType) {
         this.bodyType = bodyType;
     }
-
     public String getNumber() {
         return number;
     }
@@ -23,21 +33,6 @@ public class Car extends Auto  {
     }
     public int getSeatCount() {
         return seatCount;
-    }
-
-    private  String bodyType;
-    private String number;
-    private int seatCount;
-
-
-    public void sellaCar(){
-        System.out.println(getNumber() + " номер авто" + seatCount + " места" + bodyType );
-
-    }
-
-    @Override
-    public String toString(){
-        return number + " номер " + seatCount + "места " + bodyType;
     }
 
 

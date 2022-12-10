@@ -1,5 +1,6 @@
 import Transport.Auto;
 import Transport.Car;
+import Transport.Train;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,7 +14,9 @@ public class Main {
             Car yaz = new Car("YAZ", "Patriot", 2020," Россия",", Джип ," , "889 ",7);
             Car porshe = new Car( "Porshe, ", "AU8 ", 2018 , ", Europe" , ", hatchbak, ","256", 5);
 
-
+            Train leningrad = new Train("Ленинград","Д-125",2019,"Россия",1700,2.3,
+                     "Ленинградский вокзал", "Ленинград Пассажирская" , 8);
+            Train lastochka = new Train("Ласточка, ", "В-901, ", 2011, "Россия",3500,12,"Белорусский вокзал", "Минск-Пасс.",13);
 
             kia.startUp();
             kia.stopEnd();
@@ -25,6 +28,8 @@ public class Main {
             System.out.println( bmv.toString());
             System.out.println( yaz.toString());
             System.out.println( porshe.toString());
+            System.out.println( leningrad.toString());
+            System.out.println( lastochka.toString());
 
     }
         }

@@ -10,11 +10,12 @@ public class Car extends Auto  {
         this.seatCount = seatCount;
     }
 
-    public Car(String brand, String model, int year, String country, String bodyType, String number, int seatCount) {
+    public Car(String brand, String model, int year, String country, String bodyType, String number, int seatCount,double fuelPercentage) {
         super(brand, model, year, country);
         this.bodyType = bodyType;
         this.number = number;
         this.seatCount = seatCount;
+        this.fuelPercentage = fuelPercentage;
     }
 
     public String getBodyType() {

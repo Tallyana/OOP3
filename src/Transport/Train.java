@@ -9,7 +9,7 @@ public class Train extends Auto {
 
 
     public Train(String brand, String model, int year, String country, double travelTime,
-                 String stationName, String finalStop) {
+                 String stationName, String finalStop,double fuelPercentage) {
         super(brand, model, year, country);
         this.travelTime = travelTime;
         this.stationName = stationName;
@@ -17,13 +17,14 @@ public class Train extends Auto {
     }
 
     public Train(String brand, String model, int year, String country, double price, double travelTime,
-                 String stationName, String finalStop, int numberWagons) {
+                 String stationName, String finalStop, int numberWagons, double fuelPercentage) {
         super(brand, model, year, country);
         this.price = price;
         this.travelTime = travelTime;
         this.stationName = stationName;
         this.finalStop = finalStop;
         this.numberWagons = numberWagons;
+        this.fuelPercentage = fuelPercentage;
     }
 
 
@@ -69,7 +70,7 @@ public class Train extends Auto {
 
     public String toString() {
         return "Количество вагонов  "+ numberWagons + ". Начальная станция  " + stationName + ". Конечная станция  "
-                + finalStop + ".Время поездки " + travelTime + "час.Цена билета " + price + "руб.";
+                + finalStop + ".Время поездки " + travelTime + "час.Цена билета " + price + "руб.Количество топлива в процентах "+ fuelPercentage +"%." ;
     }
 }
 

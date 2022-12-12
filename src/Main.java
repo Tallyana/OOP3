@@ -11,12 +11,12 @@ public class Main {
             Auto kia = new Auto("KIA", "Sportage", 2009, " Южная Корея");
             Auto hyundai = new Auto("Hyundai", "Avante", 2001," Южная Корея");
 
-            Car yaz = new Car("YAZ", "Patriot", 2020," Россия",", Джип ," , "889 ",7);
-            Car porshe = new Car( "Porshe, ", "AU8 ", 2018 , ", Europe" , ", hatchbak, ","256", 5);
+            Car yaz = new Car("YAZ", "Patriot", 2020," Россия",", Джип ," , "889 ",7,13.20);
+            Car porshe = new Car( "Porshe, ", "AU8 ", 2018 , ", Europe" , ", hatchbak, ","256", 5,25.30);
 
             Train leningrad = new Train("Ленинград","Д-125",2019,"Россия",1700,2.3,
-                     "Ленинградский вокзал", "Ленинград Пассажирская" , 8);
-            Train lastochka = new Train("Ласточка, ", "В-901, ", 2011, "Россия",3500,12,"Белорусский вокзал", "Минск-Пасс.",13);
+                     "Ленинградский вокзал", "Ленинград Пассажирская" , 8,56.60);
+            Train lastochka = new Train("Ласточка, ", "В-901, ", 2011, "Россия",3500,12,"Белорусский вокзал", "Минск-Пасс.",13,75.50);
 
             kia.startUp();
             kia.stopEnd();
